@@ -18,7 +18,7 @@ export class HorarioComponent {
   }
 
   gotohorario(){
-   //aca debe abrir el proyeto 2
+    window.location.href = 'http://www.developer-rod.com//horario';
   }
 
 
