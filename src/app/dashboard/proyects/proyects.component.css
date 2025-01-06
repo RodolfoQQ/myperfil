@@ -1,0 +1,45 @@
+.moreProyect{
+  position: absolute;
+  inset-block-start: 100px;
+  inline-size: 12px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+ul{
+  margin: 0px;
+  border: solid 1px rgb(246, 244, 244);
+  background-color: rgb(145, 145, 149);
+}
+
+ul:hover{
+background-color: rgb(107, 110, 141);
+}
+
+li{
+  list-style: none;
+}
+
+.moreProyect ul li button{
+  color: rgb(239, 239, 243);
+  position: relative;
+  background-color: rgb(1, 24, 24);
+  inline-size: 100%;
+  padding: 10px;
+}
+
+.moreProyect ul li button:hover{
+  background-color: rgb(153, 174, 174);
+  color: black;
+}
+
+.moreProyect:hover{
+  inline-size: 280px;
+  transition: 0.5s;
+  overflow: visible;
+}
+
+.moreProyect ul li button:hover{
+  transition: 0.5s;
+}
+

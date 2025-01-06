@@ -1,0 +1,55 @@
+
+.carousel {
+  padding: 100px;
+  height:450px;
+  display: flex;
+  justify-content: center;
+}
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:650px;
+
+  }
+
+  .carousel-inner {
+      height: 490px;
+      width: 250px;
+      border-radius: 25%;
+  }
+
+
+.carousel-item img {
+  width: 100%;
+  position: absolute; /* Permite mover la imagen dentro del contenedor */
+  top: -30px;
+}
+.leftcontenphoto div{
+  width: 450px;
+  height: 50%;
+  margin: 25px;
+  color: rgb(199, 202, 204);
+  font-family: helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  word-spacing: -3px;
+}
+
+.leftcontenphoto div div h5{
+
+  padding: 25px;
+
+  color: rgb(199, 202, 204);
+  font-family: helvetica;
+  word-spacing: -3px;
+
+}
+
+
+
+

@@ -1,0 +1,114 @@
+body{
+  background: linear-gradient(rgb(6, 0, 0),rgb(6, 0, 0), rgba(18, 2, 52, 0.881),rgb(6, 0, 0),  black);
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+
+}
+
+.footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+.wasap{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  z-index: 1000;
+}
+
+@media(max-width:480px){
+.wasap{
+  width: 85px;
+  height: 85px;
+  position: fixed;
+  right: 100px; /* Ajusta la distancia desde el borde derecho */
+  bottom: 100px; /* Ajusta la distancia desde el borde inferior */
+
+}
+}
+
+.wasap img{
+width: 100%;
+height: 100%;
+}
+
+.navbarmenu{
+  display: flex;
+  width: auto;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+@media(max-width:480px){
+  .navbarmenu{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  }
+}
+
+
+
+.navbarmenu div{
+  display: flex;
+
+
+}
+.navbarmenu nav div button{
+  margin-left: 20px;
+  font-family: Helvetica;
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  color: rgb(109, 110, 110);
+  font-size: 24px;
+}
+
+.navbarmenu nav div button:hover{
+  color: rgb(254, 248, 248);
+  text-shadow:#ebf9bf 0 0 10px ;
+}
+
+
+.navbarmenu nav div button p:hover{
+  border-bottom: 1px solid rgb(233, 238, 206);
+  transition: width 0.5s ease;
+  position: relative;
+
+}
+
+.navbarmenu nav div {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:480px){
+  .navbarmenu {
+    font-size: 24px;
+    background-color: rgb(194, 193, 197);
+
+
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
+

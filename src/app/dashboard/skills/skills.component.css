@@ -1,0 +1,64 @@
+body{
+  background: transparent;
+}
+.container{
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+.fondo{
+  background: rgba(26, 26, 26,0.5);
+  width: 85%;
+  display: flex;
+  border-radius: 50px;
+}
+
+@media(max-width:480px){
+  .fondo{
+    height: 1400px;
+  }
+}
+
+
+.fondo :nth-child(1){
+width: 40%;
+color: rgb(237, 236, 235);
+text-align: justify;
+padding-left: 10%;
+padding-top: 50px;
+}
+
+
+@media(max-width:480px){
+  .fondo{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .fondo :nth-child(1){
+    width: 100%;
+    display: flex;
+    padding: 6%;
+    justify-content: center;
+  }
+}
+.carousel-item img{
+  width: 200px;
+  height: 400px;
+  margin: 5%;
+  padding-right: 5%;
+}
+
+@media(max-width:480){
+  .carousel-item img{
+    width: 20%;
+    height: 40%;
+  }
+
+}
+
+

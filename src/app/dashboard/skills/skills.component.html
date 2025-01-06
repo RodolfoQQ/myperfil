@@ -1,0 +1,12 @@
+<body>
+  <div class="container">
+
+    <div class="fondo">
+      <div>{{misskills}}
+      </div>
+      <div class="carousel-item" *ngFor="let image of imgs; let i = index" [class.active]="i === currentIndex">
+        <img [src]="image" alt="Slide {{i}}">
+      </div>
+    </div>
+  </div>
+</body>

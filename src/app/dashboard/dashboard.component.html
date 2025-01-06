@@ -1,0 +1,27 @@
+
+<body>
+
+  <div class="navbarmenu">
+    <nav >
+      <div>
+        <button  (click)="gotoMyself()"><p>About Myself</p></button>
+        <div class="line"></div>
+        <button  (click)="gotoSkills()"><p>Skills</p></button>
+        <button  (click)="gotoProyects()"><p>Proyects</p></button>
+      </div>
+    </nav>
+
+  </div>
+
+
+  <div class="wasap">
+    <a href="https://api.whatsapp.com/send?phone=982401884&text=Hola!%20Quiero%20más%20información." target="_blank">
+      <img src="https://www.educadictos.com/wp-content/uploads/2015/03/whatsapp.png" alt="WhatsApp">
+    </a>
+  </div>
+  <router-outlet></router-outlet>
+</body>
+
+<div class="footerdiv">
+   <app-footer></app-footer>
+ </div>

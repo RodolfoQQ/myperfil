@@ -1,0 +1,23 @@
+<div class="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item" *ngFor="let image of images; let i = index" [class.active]="i === currentIndex">
+      <img [src]="image" alt="Slide {{i}}">
+    </div>
+    <div>
+     </div>
+
+  </div>
+  <div class="leftcontenphoto">
+    <div>
+      <div>
+        <h5> Con 2 años de experiencia programando en proyectos educativos y personales
+          en el area de desarrollo web y desarrollo de aplicaciones empresariales.
+       </h5>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
