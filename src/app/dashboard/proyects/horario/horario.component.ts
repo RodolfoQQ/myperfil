@@ -18,7 +18,6 @@ export class HorarioComponent {
   }
 
   gotohorario(){
-
    //aca debe abrir el proyeto 2
   }
 
