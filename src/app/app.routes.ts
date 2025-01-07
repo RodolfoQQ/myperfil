@@ -13,7 +13,7 @@ export const routes: Routes = [
       {path:'myself', component:MyselfComponent},
       {path:'proyects',component:ProyectsComponent,children:[
         {path:'almacen',component:AlmacenComponent},
-        {path:'horario',component:HorarioComponent},
+        {path:'horario',component:HorarioComponent},// esto es donde se muestra el boton  no es un recurso relacionado al rpoblema
       ]}
     ]
   },

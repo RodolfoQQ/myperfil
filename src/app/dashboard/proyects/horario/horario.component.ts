@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-horario',
@@ -12,13 +13,15 @@ export class HorarioComponent {
   titulo!:string;
 
 
-  constructor(){
+  constructor(private router: Router){
     this.titulo="Gestion de horarios"
     this.descripcion="Proyecto Restfull que maneja estados para la gestion de patrulleros y personal, creado con bases de datos relacionaes Mysql, Spring   y Angular, responsive para celulares."
   }
 
   gotohorario(){
-    window.location.href = 'http://www.developer-rod.com//horario';
+    //window.location.href = 'http://www.developer-rod.com/horario';
+   // window.location.href = 'http://localhost:4200/';
+    window.location.href = 'http://www.developer-rod.com/horario';
   }
 
 
