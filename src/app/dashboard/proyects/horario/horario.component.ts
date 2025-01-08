@@ -21,7 +21,7 @@ export class HorarioComponent {
   gotohorario(){
     //window.location.href = 'http://www.developer-rod.com/horario';
    // window.location.href = 'http://localhost:4200/';
-    window.location.href = 'http://www.developer-rod.com/horario';
+    window.location.href = 'http://horario.developer-rod.com/';
   }
 
 
