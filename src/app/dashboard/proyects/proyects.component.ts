@@ -12,7 +12,13 @@ import { AppComponent } from "../../app.component";
 })
 export class ProyectsComponent {
 
+
 constructor(private router:Router, private activateroute:ActivatedRoute){}
+ngOnInit(): void {
+  //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+  //Add 'implements OnInit' to the class.
+  this.gotoHorarios()
+}
 
   gotoAlmacen(){
     this.router.navigate(["almacen"],{relativeTo:this.activateroute})

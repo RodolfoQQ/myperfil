@@ -1,54 +1,106 @@
 
-.carousel {
-  padding: 100px;
-  height:450px;
-  display: flex;
-  justify-content: center;
-}
-
-  .carousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:650px;
-
-  }
-
-  .carousel-inner {
-      height: 490px;
-      width: 250px;
-      border-radius: 25%;
-  }
-
-
-.carousel-item img {
-  width: 100%;
-  position: absolute; /* Permite mover la imagen dentro del contenedor */
-  top: -30px;
-}
-.leftcontenphoto div{
-  width: 450px;
-  height: 50%;
-  margin: 25px;
-  color: rgb(199, 202, 204);
-  font-family: helvetica;
-  display: flex;
+body{
   justify-content: center;
   align-items: center;
-  text-align: justify;
-  word-spacing: -3px;
+  background: transparent;
 }
 
-.leftcontenphoto div div h5{
-
-  padding: 25px;
-
-  color: rgb(199, 202, 204);
-  font-family: helvetica;
-  word-spacing: -3px;
-
+.container-carrucel{
+display: flex;
+justify-content: center;
+height: 500px;
 }
+
+.container-carrucel>div{
+  flex: 1 1 ;
+}
+
+.carrucel{
+  background-image: url("/assets/img/fondo.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  animation: aparece  1.5s ease,
+  slider  ease-in-out infinite 30s;
+}
+
+@keyframes aparece{
+  from{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slider {
+  20% {
+    background-image: url("/assets/img/img1.jpg");
+  }
+  40% {
+    background-image: url("/assets/img/img2.jpeg");
+  }
+  60% {
+    background-image: url("/assets/img/img3.jpg");
+  }
+  80% {
+    background-image: url("/assets/img/img4.jpeg");
+  }
+  100% {
+    background-image: url("/assets/img/fondo.jpg");
+  }
+}
+
+
+.texto-carrucel{
+  background-color: rgba(248, 244, 244, 0.2);
+  background-position: bottom 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 20px;
+  padding: 0px 40px 0px 40px;
+  animation: aparecex 1.5s ease;
+}
+
+@keyframes aparecex{
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media(max-width:480px){
+  .container-carrucel{
+    margin-top: 10%;
+  }
+
+
+  .texto-carrucel{
+    margin: 0px 10% 0 10%;
+    position: absolute;
+    background-color: rgba(67, 23, 224, 0.4);
+    backdrop-filter: blur(2px);
+    height: 500px;
+  }
+
+  .texto-carrucel:hover{
+    display: none;
+  }
+}
+
+
+
+
 
 
 

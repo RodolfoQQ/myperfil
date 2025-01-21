@@ -10,12 +10,21 @@ import { CarrucelComponent } from '../carrucel/carrucel.component';
   styleUrl: './myself.component.css'
 })
 export class MyselfComponent {
-
-  text:string='Lo que más me motiva es el impacto positivo que podemos tener en la vida de las personas. Creo firmemente en el poder del trabajo en equipo y el coraje para transformar situaciones desafiantes en momentos de esperanza y cambio.'
-  ademas='Mi motivacion para seguir aprendiendo'
-  hola:string='Hola, soy un desarrollador de software con experiencia en Java, MySQL y TypeScript. Estoy apasionado por tecnologías robustas y tengo un gran entusiasmo por seguir aprendiendo y creciendo profesionalmente. Mi objetivo es aportar soluciones eficientes y de calidad a proyectos desafiantes, mientras continuo ampliando mis conocimientos en el campo de la tecnología.'
+  mensaje:boolean =false
+  buzon:boolean=false
+  presentacion:string='Soy un desayollador web, impulsado por conocer tecnologias modernas y darle uso en pro mejorar la vida de las personas, estoy convencido que las acciones que se hacen por motivaciones personales perduran en el tiempo y que los obstaculos que se presentan dia a dia  son facilmente superados por una mente que cree en si mismo.'
 
   constructor(private router: Router, private activerouter: ActivatedRoute){}
+ngOnInit(): void {
+  //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+  //Add 'implements OnInit' to the class.
+}
+//this.abrirmensaje();
+
+  abrirmensaje(){
+    this.mensaje= this.mensaje = !this.mensaje
+    this.buzon = this.buzon = ! this.buzon
+  }
 
 
 

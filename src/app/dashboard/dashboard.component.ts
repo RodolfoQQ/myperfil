@@ -14,6 +14,7 @@ import { MyselfComponent } from './myself/myself.component';
 })
 export class DashboardComponent {
 
+  expander:boolean =false
   telf:string='982401884'
   imgs=['https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png',
     'https://th.bing.com/th/id/R.5be5fbcb55c0d12f61f03fd603c2ddd2?rik=XRGnhkgM5j9UnA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fwhatsapp-hd-png-whatsapp-logo-png-1000.png&ehk=oQrbrzYutw1gKvWMMfOAQIfVxxTgIrC8qo7KFEG2NeE%3d&risl=&pid=ImgRaw&r=0',
@@ -25,8 +26,15 @@ export class DashboardComponent {
 
 ngOnInit(): void {
   this.gotoMyself()
+
 }
 
+toggleMenu(){
+  this.expander = ! this.expander;
+  /*setTimeout(()=>{
+    this.expander=false
+  },2000)*/
+  }
 
  gotoSkills(){
   this.router.navigate(["skills"],{relativeTo:this.activerouter})
@@ -37,6 +45,8 @@ gotoMyself(){
 gotoProyects(){
   this.router.navigate(["proyects"],{relativeTo:this.activerouter})
 }
+
+
 
 
 }

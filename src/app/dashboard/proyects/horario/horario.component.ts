@@ -15,12 +15,12 @@ export class HorarioComponent {
 
   constructor(private router: Router){
     this.titulo="Gestion de horarios"
-    this.descripcion="Proyecto Restfull que maneja estados para la gestion de patrulleros y personal, creado con bases de datos relacionaes Mysql, Spring   y Angular, responsive para celulares."
+
+
   }
 
   gotohorario(){
-    //window.location.href = 'http://www.developer-rod.com/horario';
-   // window.location.href = 'http://localhost:4200/';
+
     window.location.href = 'http://horario.developer-rod.com/';
   }
 

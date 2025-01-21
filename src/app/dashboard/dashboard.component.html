@@ -1,27 +1,80 @@
-
 <body>
+  <nav>
+    <h5>
+      Developer-Rod.com
+    </h5>
+  </nav>
 
-  <div class="navbarmenu">
-    <nav >
+  <div class="navbarmenu" [class.desplegar]="expander" (click)="toggleMenu()">
+    @if (expander) {
+    <div>
+      <ul>
+        <li>
+          <button (click)="gotoMyself()">
+            <p>Acerca de mi</p>
+          </button>
+        </li>
+        <li>
+          <button (click)="gotoSkills()">
+            <p>Skills</p>
+          </button>
+        </li>
+        <li>
+          <button (click)="gotoProyects()">
+            <p>Proyectos</p>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    }
+    <nav>
       <div>
-        <button  (click)="gotoMyself()"><p>Acerca de mi</p></button>
-        <div class="line"></div>
-        <button  (click)="gotoSkills()"><p>Skills</p></button>
-        <button  (click)="gotoProyects()"><p>Proyectos</p></button>
+        <div>
+          <button (click)="gotoMyself()">
+            <p>Acerca de mi</p>
+          </button>
+        </div>
+        <div>
+          <button (click)="gotoSkills()">
+            <p>Skills</p>
+          </button>
+
+        </div>
+        <div>
+          <button (click)="gotoProyects()">
+            <p>Proyectos</p>
+          </button>
+
+        </div>
+
       </div>
     </nav>
 
   </div>
 
 
-  <div class="wasap">
-    <a href="https://api.whatsapp.com/send?phone=982401884&text=Hola!%20Quiero%20más%20información." target="_blank">
-      <img src="https://www.educadictos.com/wp-content/uploads/2015/03/whatsapp.png" alt="WhatsApp">
-    </a>
+
+
+  <div>
+
+    <router-outlet></router-outlet>
+
+    <div class="wasap">
+      <a href="https://api.whatsapp.com/send?phone=982401884&text=Hola!%20Quiero%20más%20información." target="_blank">
+        <img src="https://www.educadictos.com/wp-content/uploads/2015/03/whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+
   </div>
-  <router-outlet></router-outlet>
+
+
+
+
+  <app-footer></app-footer>
 </body>
 
-<div class="footerdiv">
-   <app-footer></app-footer>
- </div>
+<!-- <div class="footeren">
+
+</div> -->
+

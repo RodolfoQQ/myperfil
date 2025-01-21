@@ -1,19 +1,24 @@
+body{
+  height: 100vh;
+  background: transparent;
+}
 .moreProyect{
+
   position: absolute;
-  inset-block-start: 100px;
-  inline-size: 12px;
+  inset-block-start: 200px;
+  inline-size: 35px;
   overflow: hidden;
   z-index: 1;
 }
 
 ul{
   margin: 0px;
-  border: solid 1px rgb(246, 244, 244);
-  background-color: rgb(145, 145, 149);
+
+  background-color: rgb(11, 11, 99);
 }
 
 ul:hover{
-background-color: rgb(107, 110, 141);
+background-color: rgb(107, 141, 111);
 }
 
 li{

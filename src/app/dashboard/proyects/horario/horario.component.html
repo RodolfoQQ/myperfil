@@ -2,10 +2,52 @@
   <div class="container">
     <div>
       <div>
-        <h1>{{descripcion}}</h1>
+        <h5>Proyecto RESTful para la gestión de estados de patrulleros y personal </h5>
+        <p>
+          El proyecto fue desarrollado con una base de datos
+          relacional en MySQL, diseñada y normalizada en 1ª, 2ª y 3ª forma normal, con procedimientos almacenados
+          (Stored Procedures) para manejar operaciones complejas y garantizar la consistencia de los datos. La base de
+          datos fue creada desde cero, basada en la lógica de negocio de una unidad de la PNP.
+        </p>
+        <h5>
+          Tecnologías y Arquitectura
+        </h5>
+        <h3>
+          Backend:
+        </h3>
+        <p>
+
+          Implementado con Spring Boot, utilizando Hibernate y JPA Repository para la gestión de datos.
+          Aplicación del patrón Singleton para asegurar la eficiencia en la gestión de recursos.
+          Uso de DTOs para optimizar la transferencia de datos entre las capas del sistema.
+          Arquitectura en capas siguiendo principios de POO: Controladores, servicios, modelos y repositorios.
+          Diseño modular adaptable a Domain-Driven Design (DDD).
+        </p>
+        <h3>
+          Frontend:
+
+        </h3>
+        <p>
+
+          Desarrollado con Angular 17, consumiendo las APIs REST del backend.
+          Implementación de servicios compartidos y Observables para manejar la comunicación entre componentes.
+          Uso de Angular Material para mejorar la experiencia del usuario.
+          Despliegue
+          El proyecto fue desplegado utilizando una infraestructura basada en Docker:
+          Se creó una imagen que incluye el servidor de MySQL y la aplicación Spring Boot en un contenedor.
+          Esta imagen se alojó en la nube y se vinculó a un subdominio propio para garantizar un acceso rápido y
+          centralizado.
+        </p>
       </div>
       <div>
+
         <button (click)="gotohorario()">ver proyecto</button>
+         <div class="containerimg">
+            <div class="github" >
+              <a href="https://github.com/RodolfoQQ/horariobackentSpring.git"> Github</a>
+            </div>
+
+        </div>
       </div>
     </div>
   </div>
